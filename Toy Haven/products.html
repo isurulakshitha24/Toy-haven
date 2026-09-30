@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Toy Haven - Products</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon"
+      href="images/favicon.png">
+    <link rel="manifest"
+      href="manifest.json">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<header class="simple-header">
+
+    <img src="images/logo.jpg"
+         alt="Toy Haven Logo"
+         class="logo-img">
+
+    <h1>Toy Haven</h1>
+    <button id="menuBtn"
+        class="menu-btn"
+        type="button">
+    ☰
+</button>
+
+</header>
+
+
+<nav>
+
+<ul id="navMenu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="wishlist.html">Wishlist</a></li>
+
+<li><a href="checkout.html">Checkout</a></li>
+
+<li><a href="feedback.html">Support</a></li>
+
+</ul>
+
+</nav>
+
+
+<main>
+
+<h1>Our Products</h1>
+
+
+<div class="search-area">
+
+<label for="searchProduct">
+Search Product
+</label>
+
+<input type="text"
+       id="searchProduct"
+       placeholder="Search toy">
+
+
+<label for="categoryFilter">
+Category
+</label>
+
+<select id="categoryFilter">
+
+<option value="All">
+All
+</option>
+
+<option value="Figurines">
+Figurines
+</option>
+
+<option value="Toys">
+Toys
+</option>
+
+<option value="Board Games">
+Board Games
+</option>
+
+<option value="Diecast Cars">
+Diecast Cars
+</option>
+
+</select>
+
+</div>
+
+
+<div id="productList"
+     class="products">
+</div>
+
+
+<div id="productModal"
+     class="modal">
+
+    <div class="modal-content">
+
+        <button type="button"
+                onclick="closeModal()">
+            Close
+        </button>
+
+        <img id="modalImage"
+             src=""
+             alt="Product Image">
+
+        <h2 id="modalName"></h2>
+
+        <p id="modalCategory"></p>
+
+        <p id="modalPrice"></p>
+
+    </div>
+
+</div>
+
+</div>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-section">
+
+            <h2>Toy Haven</h2>
+
+            <p>
+                Toys for a Brighter Tomorrow
+            </p>
+
+        </div>
+
+
+        <div class="footer-section">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="wishlist.html">Wishlist</a>
+
+            <a href="feedback.html">Support</a>
+
+        </div>
+
+
+        <div class="footer-section">
+
+            <h3>Newsletter</h3>
+
+            <p>
+                Subscribe for new toys and offers.
+            </p>
+
+            <div class="newsletter-box">
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email">
+
+                <button id="newsletterBtn">
+                    Subscribe
+                </button>
+
+            </div>
+
+            <p id="newsletterMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Toy Haven. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

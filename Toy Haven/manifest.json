@@ -1,0 +1,8 @@
+{
+    "name": "Toy Haven",
+    "short_name": "ToyHaven",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#159ee4"
+}
