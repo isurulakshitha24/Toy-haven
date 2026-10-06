@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Review and manage products in your Toy Haven shopping cart.">
+
+    <meta name="theme-color"
+          content="#159ee4">
+
+    <title>Toy Haven - Cart</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="icon"
+          href="images/favicon.png">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <script src="script.js"
+            defer></script>
+
+</head>
+
+
+<body>
+
+
+<header class="simple-header">
+
+    <img src="images/logo.jpg"
+         alt="Toy Haven logo"
+         class="logo-img">
+
+    <h1>Toy Haven</h1>
+
+    <button id="menuBtn"
+            class="menu-btn"
+            type="button"
+            aria-label="Open navigation menu">
+        ☰
+    </button>
+
+</header>
+
+
+<nav aria-label="Main navigation">
+
+    <ul id="navMenu">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Products
+            </a>
+        </li>
+
+        <li>
+            <a href="cart.html"
+               aria-current="page">
+                Cart
+            </a>
+        </li>
+
+        <li>
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+        </li>
+
+        <li>
+            <a href="checkout.html">
+                Checkout
+            </a>
+        </li>
+
+        <li>
+            <a href="feedback.html">
+                Support
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<main>
+
+    <h2>
+        Shopping Cart
+    </h2>
+
+
+    <div id="cartItems"
+         aria-live="polite">
+    </div>
+
+
+    <h2>
+        Total:
+        £<span id="cartTotal">0.00</span>
+    </h2>
+
+
+    <div class="cart-actions">
+
+        <button type="button"
+                onclick="clearCart()">
+            Clear Cart
+        </button>
+
+        <button type="button"
+                onclick="location.href='checkout.html'">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+
+        <div class="footer-section">
+
+            <h2>Toy Haven</h2>
+
+            <p>
+                Toys for a Brighter Tomorrow
+            </p>
+
+        </div>
+
+
+        <div class="footer-section">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="feedback.html">
+                Support
+            </a>
+
+        </div>
+
+
+        <div class="footer-section">
+
+            <h3>
+                Newsletter
+            </h3>
+
+            <p>
+                Subscribe for new toys and offers.
+            </p>
+
+
+            <div class="newsletter-box">
+
+                <label for="newsletterEmail"
+                       class="hidden-label">
+                    Newsletter email address
+                </label>
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email"
+                       autocomplete="email">
+
+                <button id="newsletterBtn"
+                        type="button">
+                    Subscribe
+                </button>
+
+            </div>
+
+
+            <p id="newsletterMessage"
+               aria-live="polite">
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Toy Haven. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+    "name": "Toy Haven",
+    "short_name": "ToyHaven",
+    "description": "Toy Haven online toy store for toys, figurines, board games and diecast cars.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#006aa7"
+}

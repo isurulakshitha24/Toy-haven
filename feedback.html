@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Toy Haven, submit feedback and view frequently asked questions.">
+
+    <meta name="theme-color"
+          content="#159ee4">
+
+    <title>Toy Haven - Support</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="icon"
+          href="images/favicon.png">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <script src="script.js"
+            defer></script>
+
+</head>
+
+<body>
+
+
+<header class="simple-header">
+
+    <img src="images/logo.jpg"
+         alt="Toy Haven logo"
+         class="logo-img">
+
+    <h1>Toy Haven</h1>
+
+    <button id="menuBtn"
+            class="menu-btn"
+            type="button"
+            aria-label="Open navigation menu">
+        ☰
+    </button>
+
+</header>
+
+
+<nav aria-label="Main navigation">
+
+    <ul id="navMenu">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Products
+            </a>
+        </li>
+
+        <li>
+            <a href="cart.html">
+                Cart
+            </a>
+        </li>
+
+        <li>
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+        </li>
+
+        <li>
+            <a href="checkout.html">
+                Checkout
+            </a>
+        </li>
+
+        <li>
+            <a href="feedback.html"
+               aria-current="page">
+                Support
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<main>
+
+    <h2>
+        Feedback & Support
+    </h2>
+
+
+    <form id="feedbackForm">
+
+        <label for="feedbackName">
+            Name
+        </label>
+
+        <input type="text"
+               id="feedbackName"
+               name="feedbackName"
+               autocomplete="name"
+               required>
+
+
+        <label for="feedbackEmail">
+            Email
+        </label>
+
+        <input type="email"
+               id="feedbackEmail"
+               name="feedbackEmail"
+               autocomplete="email"
+               required>
+
+
+        <label for="feedbackMessage">
+            Message
+        </label>
+
+        <textarea id="feedbackMessage"
+                  name="feedbackMessage"
+                  required>
+        </textarea>
+
+
+        <button type="submit">
+            Send Feedback
+        </button>
+
+    </form>
+
+
+    <p id="feedbackResult"
+       aria-live="polite">
+    </p>
+
+
+    <h2>
+        Frequently Asked Questions
+    </h2>
+
+
+    <div class="faq-item">
+
+        <button class="faq-button"
+                type="button"
+                aria-expanded="false">
+
+            How long does delivery take?
+
+        </button>
+
+        <div class="faq-answer">
+
+            Usually 3 to 5 working days.
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button class="faq-button"
+                type="button"
+                aria-expanded="false">
+
+            Can I return a toy?
+
+        </button>
+
+        <div class="faq-answer">
+
+            Yes. Please contact our support team.
+
+        </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+        <button class="faq-button"
+                type="button"
+                aria-expanded="false">
+
+            How can I pay?
+
+        </button>
+
+        <div class="faq-answer">
+
+            You can use card or cash on delivery.
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+
+        <div class="footer-section">
+
+            <h2>
+                Toy Haven
+            </h2>
+
+            <p>
+                Toys for a Brighter Tomorrow
+            </p>
+
+        </div>
+
+
+        <div class="footer-section">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="feedback.html">
+                Support
+            </a>
+
+        </div>
+
+
+        <div class="footer-section">
+
+            <h3>
+                Newsletter
+            </h3>
+
+            <p>
+                Subscribe for new toys and offers.
+            </p>
+
+
+            <div class="newsletter-box">
+
+                <label for="newsletterEmail"
+                       class="hidden-label">
+                    Newsletter email address
+                </label>
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email"
+                       autocomplete="email">
+
+                <button id="newsletterBtn"
+                        type="button">
+                    Subscribe
+                </button>
+
+            </div>
+
+
+            <p id="newsletterMessage"
+               aria-live="polite">
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Toy Haven. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

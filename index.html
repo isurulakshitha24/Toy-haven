@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Toy Haven is an interactive online toy store for figurines, toys, board games and diecast cars.">
+
+    <meta name="theme-color"
+          content="#159ee4">
+
+    <title>Toy Haven - Home</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="icon"
+          href="images/favicon.png">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <script src="script.js"
+            defer></script>
+
+</head>
+
+
+<body>
+
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <img src="images/logo.jpg"
+             alt="Toy Haven logo"
+             class="logo-img">
+
+        <div>
+
+            <h1>Toy Haven</h1>
+
+            <p>
+                Toys for a Brighter Tomorrow
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile menu button -->
+
+    <button id="menuBtn"
+            class="menu-btn"
+            type="button"
+            aria-label="Open navigation menu">
+
+        ☰
+
+    </button>
+
+
+    <!-- Header search -->
+
+    <div class="header-search">
+
+        <label for="topSearch"
+               class="hidden-label">
+
+            Search Toy Haven
+
+        </label>
+
+        <input type="text"
+               id="topSearch"
+               placeholder="Search Toy Haven">
+
+    </div>
+
+
+    <div class="header-links">
+
+        <a href="products.html">
+            New Arrivals
+        </a>
+
+        <a href="wishlist.html">
+            ♡ Wishlist
+        </a>
+
+        <a href="cart.html">
+            🛒 Cart
+        </a>
+
+    </div>
+
+</header>
+
+
+<nav aria-label="Main navigation">
+
+    <ul id="navMenu">
+
+        <li>
+            <a href="index.html"
+               aria-current="page">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Products
+            </a>
+        </li>
+
+        <li>
+            <a href="cart.html">
+                Cart
+            </a>
+        </li>
+
+        <li>
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+        </li>
+
+        <li>
+            <a href="checkout.html">
+                Checkout
+            </a>
+        </li>
+
+        <li>
+            <a href="feedback.html">
+                Support
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<main>
+
+
+    <!-- Hero section -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h2 id="bannerTitle">
+                Discover Amazing Toys
+            </h2>
+
+            <p id="bannerText">
+                Play • Learn • Grow
+            </p>
+
+            <button type="button"
+                    onclick="location.href='products.html'">
+
+                Shop Now
+
+            </button>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="images/banner.jpg"
+                 alt="Selection of toys available at Toy Haven"
+                 fetchpriority="high">
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured products -->
+
+    <section>
+
+        <h2>
+            Featured Products
+        </h2>
+
+        <div id="featuredProducts"
+             class="products">
+        </div>
+
+    </section>
+
+
+    <!-- Product of the day -->
+
+    <section>
+
+        <h2>
+            Product of the Day
+        </h2>
+
+        <div id="productOfDay"
+             class="products">
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <h2>
+                Toy Haven
+            </h2>
+
+            <p>
+                Toys for a Brighter Tomorrow
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+            <a href="feedback.html">
+                Support
+            </a>
+
+        </div>
+
+
+        <div class="footer-newsletter">
+
+            <h3>
+                Newsletter
+            </h3>
+
+            <p>
+                Subscribe for new toys and offers.
+            </p>
+
+
+            <div class="newsletter-box">
+
+                <label for="newsletterEmail"
+                       class="hidden-label">
+
+                    Newsletter email address
+
+                </label>
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter your email"
+                       autocomplete="email">
+
+                <button id="newsletterBtn"
+                        type="button">
+
+                    Subscribe
+
+                </button>
+
+            </div>
+
+
+            <p id="newsletterMessage"
+               aria-live="polite">
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Toy Haven. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
